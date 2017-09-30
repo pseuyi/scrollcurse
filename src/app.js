@@ -38,7 +38,7 @@ class App extends Component {
     );
 
     murder.document.write(
-      "<img src=\"/curse.jpg\"/>"
+      "<img src=\"curse.jpg\"/>"
     )
   }
 
