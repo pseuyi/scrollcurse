@@ -32,10 +32,14 @@ class App extends Component {
 
   handleClick = () => {
     //TODO: click should build a deck and show top card
-    window.open(
+    const murder = window.open(
       "",
-      null, "height=400,width=400,status=yes,toolbar=no,menubar=no,location=no"
+      null, "height=532,width=510,status=no,toolbar=no,menubar=no,location=no"
     );
+
+    murder.document.write(
+      "<img src=\"/curse.jpg\"/>"
+    )
   }
 
   render() {
