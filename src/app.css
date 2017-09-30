@@ -1,20 +1,45 @@
+.app {
+  padding: 2rem;
+  width: 100%;
+  font-size: 44px;
+  text-align: center;
+}
+
 header {
-  font-size: 40px;
-  text-align: right;
+  margin: auto;
+  color: blue;
+  font-weight: bolder;
+  border: 1px solid blue;
+  padding: 0.1rem;
+  display: inline-block;
+  padding:
 }
 
 h1 {
-  font-size: 100px;
-  font-family: 'Comic Sans MS', fixed-width;
-  text-align: left;
-  margin: 0;
+  font-size: 1em;
 }
 
 hr {
   color: black;
+  height: 10px;
 }
 
-.fixed {
+#fixed-scroll {
+  top: 28rem;
+  vertical-align: middle;
   position: fixed;
-  bottom: 2rem;
+}
+
+#fixed-header {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  color: grey;
+  border: 1px solid grey;
+}
+
+#more-btn {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
 }

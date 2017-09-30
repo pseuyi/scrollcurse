@@ -4,32 +4,51 @@ import './app.css';
 
 class App extends Component {
 
-  scrollCorn = pos => {
+  curse = pos => {
     const h1style = {
-      color: `hsl(${pos}, 25%, 50%)`,
+      color: `hsl(${pos}, 17%, 50%)`,
     };
     const hrstyle = {
-      width: pos,
+      width: 10 * (pos % 215),
     };
-    
-    const content = 'corn' + ' x' + pos/10;
+
+    const content = 'rse' + ' x' + pos/10;
     return (
-      <section className="fixed">
-        <h1 style={h1style}>
-          { content }
-        </h1>
-        <hr style={hrstyle}/>
-      </section>
+      <div>
+        <section id="fixed-scroll">
+          <h1 style={h1style}>
+            { content }
+          </h1>
+          <hr style={hrstyle}/>
+        </section>
+        {
+          pos > 100 ?
+          <header id="fixed-header">scrollcu</header>
+          : null
+        }
+      </div>
     )
+  }
+
+  handleClick = () => {
+    //TODO: click should build a deck and show top card
+    window.open(
+      "",
+      null, "height=400,width=400,status=yes,toolbar=no,menubar=no,location=no"
+    );
   }
 
   render() {
     return (
       <div className="app">
-        <header>scrollcurse</header>
+        <header>scrollcu</header>
         <Scroll>
-          { this.scrollCorn }
+          { this.curse }
         </Scroll>
+        <button
+        id="more-btn"
+        onClick={this.handleClick}
+        >more</button>
       </div>
     );
   }
