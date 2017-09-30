@@ -12,7 +12,7 @@ class App extends Component {
       width: 10 * (pos % 215),
     };
 
-    const content = 'rse' + ' x' + pos/10;
+    const content = 'rse x' + pos/10;
     return (
       <div>
         <section id="fixed-scroll">
