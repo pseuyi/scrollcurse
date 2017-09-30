@@ -23,7 +23,7 @@ class App extends Component {
         </section>
         {
           pos > 100 ?
-          <header id="fixed-header">scrollcu</header>
+          <header id="fixed-header">scroll<sub>cu</sub></header>
           : null
         }
       </div>
@@ -45,7 +45,7 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        <header>scrollcu</header>
+        <header>scroll<sub>cu</sub></header>
         <Scroll>
           { this.curse }
         </Scroll>
